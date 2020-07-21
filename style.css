@@ -1,20 +1,107 @@
-/*
-    DEMO STYLE
-*/
-
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background-color: #fff;
+    color: #8892b0;
+    line-height: 1.3;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #0a192f;
+    margin: 0 0 10px 0;
+}
+
+.h2top {
+    color: #fff;
+}
+
+h1.big-title {
+    font-size: 60px;
+    line-height: 1.1;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+section {
+    margin-top: 60px;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.0em;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+    margin: 0 0 15px 0;
 }
+
+p > a {
+    display: inline-block;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    -webkit-text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    cursor: pointer;
+    color: #8892b0;
+}
+
+p > a:hover,p > a:focus,p > a:active {
+    color: #8892b0;
+    outline: 0;
+}
+
+p > a:hover:after,p > a:focus:after,p > a:active:after {
+    width: 100%;
+}
+
+p > a:hover > *,p > a:focus > *,p > a:active > * {
+    color: #8892b0 !important;
+    -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+p > a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    position: relative;
+    bottom: 0.37em;
+    background-color: #8892b0;
+    -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    opacity: 0.5;
+}
+
+ul.fancy-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+}
+
+ul.fancy-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+ul.fancy-list li:before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #8892b0;
+}
+
+/* .accordion {
+    border-radius: 3px;
+    border: 2px solid #fff;
+} */
 
 a,
 a:hover,
@@ -25,12 +112,8 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
     background: #fff;
     border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
@@ -39,11 +122,23 @@ a:focus {
     border: none;
 }
 
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
+.getInTouch {
+    background-color: transparent;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8892b0;
+    border-image: initial;
+    border-radius: 3px;
+    padding: 1.25rem 1.75rem;
+    text-decoration-skip-ink: auto;
+    cursor: pointer;
+    color: #8892b0;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    margin-top: 10px;
 }
 
 /* ---------------------------------------------------
@@ -62,8 +157,8 @@ a:focus {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
-    color: #fff;
+    background-color: #0a192f;
+    color: #8892b0;
     transition: all 0.3s;
 }
 
@@ -73,7 +168,7 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #0a192f;
 }
 
 #sidebar ul.components {
@@ -93,14 +188,12 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #8892b0;
     background: #fff;
 }
 
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #8892b0;
 }
 
 a[data-toggle="collapse"] {
@@ -118,7 +211,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #fff;
 }
 
 ul.CTAs {
@@ -135,12 +228,12 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #8892b0;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #0a192f !important;
     color: #fff !important;
 }
 
