@@ -276,3 +276,18 @@ a.article:hover {
         display: none;
     }
 }
+
+.social-container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.flex-item-1 {
+	flex: 1;
+}
+
+.item {
+	margin: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
